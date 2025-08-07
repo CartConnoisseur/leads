@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import sh.cxl.leads.access.PlayerModelAccess;
 
 public class LeashRenderer {
-    private static final Identifier TEXTURE = new Identifier("textures/entity/lead_knot.png");
+    private static final Identifier TEXTURE = /*? >=1.21 {*/ Identifier.of /*?} else {*//* new Identifier *//*?}*/("textures/entity/lead_knot.png");
 
     private static final ModelPart RIGHT_LEASH = buildModel(
             "leads$right_leash",
