@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "leads",
+  "version": "${version}",
+  "name": "Leads",
+  "description": "Wraps a lead around your hand when leading a mob.",
+  "authors": [
+    {
+      "name": "Caroline Larimore",
+      "contact": {
+        "email": "caroline@larimo.re",
+        "homepage": "https://caroline.larimo.re",
+        "github": "https://github.com/CartConnoisseur",
+        "modrinth": "https://modrinth.com/user/c",
+        "discord": "@mishandle"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/leads",
+    "sources": "https://github.com/CartConnoisseur/leads",
+    "issues": "https://github.com/CartConnoisseur/leads/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/leads/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "sh.cxl.leads.Leads"
+    ]
+  },
+  "mixins": [
+    "leads.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
